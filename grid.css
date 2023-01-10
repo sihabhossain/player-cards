@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+}
+.footballers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.player-img{
+    width: 75%;
+}
+
+.player{
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: blue;
+    color: white;
+}
+
+.player:hover{
+ background-color: rebeccapurple ;
+ border: 1px solid rebeccapurple;
+ 
+}
+
+h1{
+    text-align: center;
+    margin: 50px;
+    color: white;
+    text-shadow: 2px 2px red;
+}
+
+h2{
+    text-shadow: 2px 2px red;
+}
+
+h4,p{
+    color: linen;
+}
+button{
+    width: 100px;
+    background-color: rgb(255, 191, 30);
+    border-style: none;
+    border-radius: 5px;
+    color:#757575;
+}
+
+.player h4,h2, p,button{
+    margin-top: 20px;
+}
+
+/* smaller screens */
+@media screen and (max-width: 576px) {
+ .footballers{
+    grid-template-columns: repeat(1, 1fr);
+ }    
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .footballers{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
